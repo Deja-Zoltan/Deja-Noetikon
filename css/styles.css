@@ -1,0 +1,207 @@
+/* ======= GOOGLE FONTS ======== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+/* ======= VARIABLES CSS ======== */
+
+/* ======= COLORS ======== */
+/*
+#E8EAE3 - Light Color
+#373833 - Dark Color
+#FA2742 - Red Color
+#010101 - Darkest Color
+*/
+/* ======= BASE ======== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body {
+    height: 100%;
+    color: #E8EAE3;
+    text-align: center;
+}
+.background {
+    background-color: #010101;
+    background-image: url('/Deja-Noetikon/images/Sith-Holocron.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    filter: blur(5px);
+    transition: filter 2s;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* COVER STYLES */
+.cover {
+    background-color: rgba(1, 1, 1, 0.75);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    transition: opacity 2s, background-color 2s;
+}
+.cover-name {
+    color: #FA2742;
+    font-weight: 400;
+    font-size: 36px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: #E8EAE3 solid 1px;
+    position: fixed;
+    margin-top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+}
+.cover-noetikon {
+    margin-top: 30px;
+    font-weight: 200;
+    font-size: 20px;
+    position: fixed;
+    margin-top: 180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+}
+.anywhere {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+    font-size: 16px;
+}
+.mando-img {
+    width: 100px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: opacity 1s;
+}
+.darkside-img {
+    width: 100px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: opacity 1s;
+}
+.mando-text {
+    color:#FA2742;
+    font-weight: 200;
+    font-size: 20px;
+    position: fixed;
+    margin-top: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    opacity: 0;
+    transition: opacity 1s;
+    visibility: hidden;
+}
+.label-code {
+    color:#FA2742;
+    margin-top: 30px;
+    font-weight: 200;
+    font-size: 20px;
+    position: fixed;
+    margin-top: 180px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    opacity: 0;
+    transition: opacity 1s;
+    visibility: hidden;
+}
+.code {
+    position: fixed;
+    margin-top: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    opacity: 0;
+    transition: opacity 1s;
+    visibility: hidden;
+}
+.submit-button {
+    position: fixed;
+    margin-top: 180px;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    width: 30px;
+    background-color: #FA2742;
+    border: none;
+    opacity: 0;
+    transition: opacity 1s;
+    visibility: hidden;
+}
+/* NAV STYLES */
+.nav {
+    text-align: center;
+    transition: left 1s;
+    position: fixed;
+    width: 80%;
+    bottom: 0;
+    margin-bottom: 80px;
+    left: -50%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+.nav-item {
+    border: #E8EAE3 solid 1px;
+    text-align: center;
+    margin-top: 35px;
+    cursor: pointer;
+    border-bottom-right-radius: 20%;
+}
+.nav-text {
+    font-weight: 200;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* MAIN STYLES */
+.main {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.content-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+/* MEDIA QUERIES  */

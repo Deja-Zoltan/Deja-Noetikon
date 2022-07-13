@@ -1,11 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Noetikon</title>
+    <!-- ===== FAVICON ===== -->
+    <link rel="shortcut icon" href="images/favicon.png">
+     <!-- ===== BOXICONS ===== -->
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ===== SWIPER CSS ===== -->
+
+     <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/styles.css">
+     <!-- ===== MAIN JS ===== -->
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1>DEJA ZOLTAN</h1>
+    <div class="background" id="background"></div>
+    <h1 class="cover-name" id="cover-name">Deja Zoltan</h1>
+    <h3 class="cover-noetikon" id="cover-noetikon">Noetikon</h3>
+    <div class="cover" id="cover">
+      <img id="mando-img" class="mando-img" src="/Deja-Noetikon/images/mando.png" onclick="coverClick1()">
+      <img id="darkside-img" class="darkside-img" src="/Deja-Noetikon/images/darkside.png" onclick="coverClick2()">
+      <form>
+        <label id="label-code" class="label-code" for="code">Code:</label>
+        <input class="code" type="text" id="code" name="code">
+        <input class="submit-button" type="button" id="submit-button" onclick="checkCode()">
+      </form>
+      <h3 class="mando-text" id="mando-text">Access Impossible</h3>
+    </div>
+    <!-- ===== NAV ===== -->
+    <div class="nav" id="nav">
+        <div class="nav-item item-1">
+            <h3 class="nav-text">Backstory</h3>
+        </div>
+        <div class="nav-item item-2">
+            <h3 class="nav-text">Story Arcs</h3>
+        </div>
+        <div class="nav-item item-3">
+            <h3 class="nav-text">Known Skills</h3>
+        </div>
+        <div class="nav-item item-4">
+            <h3 class="nav-text">Belongings</h3>
+        </div>
+    </div>
+    <!-- ===== MAIN ===== -->
+    <div class="main">
+        <div class="backstory-content content-container"></div>
+        <div class="story-arcs-content content-container"></div>
+        <div class="known-skills-content content-container"></div>
+        <div class="belongings-content content-container"></div>
+    </div>
+    <!-- ===== FOOTER ===== -->
+
+    <!-- ===== SCROLL REVEAL ===== -->
 </body>
 </html>
